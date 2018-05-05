@@ -103,15 +103,25 @@ header .container {
 #hero span {
   color: #67c5c1; }
 
-.slide1 {
-  background-image: url("../images/group-of-3.jpg");
+/**********Slides***********/
+@keyframes hero-content {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.slide {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: background 2s; }
+
+.slide1 {
+  background-image: url("../images/group-of-3.jpg");
+  justify-content: center; }
 
 .hero-content {
   position: relative;
@@ -119,6 +129,18 @@ header .container {
 
 .cta {
   margin-top: 35px; }
+
+.slide2 {
+  background-image: url("../images/buff-dude.jpg");
+  justify-content: flex-start;
+  text-align: left;
+  color: #fff; }
+
+.slide3 {
+  background-image: url("../images/back.jpg");
+  background-position: right top;
+  justify-content: flex-end;
+  text-align: right; }
 
 footer {
   padding: 25px 0; }
