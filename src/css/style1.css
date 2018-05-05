@@ -123,18 +123,27 @@ header .container {
   color: #fff; }
 
 .slide3 {
-  background-image: url("../images/back.jpg");
-  text-align: right; }
+  background-image: url("../images/back.jpg"); }
+
+.slide4 {
+  background-image: url("../images/woman-abs-flipped.jpg");
+  text-align: right;
+  color: #fff; }
 
 .hero-content {
   position: relative;
   bottom: 75px; }
 
 .slide3 .hero-content {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 50px 100px;
+  background: rgba(0, 0, 0, 0.7); }
+
+.slide2 .hero-content,
+.slide3 .hero-content,
+.slide4 .hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 0;
   display: inline-block;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff; }
 
 .slide3 h1 {
@@ -188,7 +197,21 @@ footer li a {
 .social {
   text-align: right; }
 
+@media (min-width: 414px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 5px; } }
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .hero-content {
+    bottom: 0; } }
+
 @media (min-width: 768px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 10px 35px; }
   .brand-logo img {
     width: 85%; }
   .side-nav {
@@ -236,6 +259,12 @@ footer li a {
     bottom: 125px; } }
 
 @media (min-width: 1366px) {
+  .slide2 .hero-content,
+  .slide4 .hero-content {
+    padding: 0;
+    background: none; }
+  .slide3 .hero-content {
+    padding: 50px 100px; }
   header .container {
     display: flex;
     flex-direction: row;

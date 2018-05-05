@@ -184,9 +184,13 @@ header .container {
 
 .slide3 {
   background-image: url("../images/back.jpg");
-  text-align: right;
 }
 
+.slide4 {
+  background-image: url("../images/woman-abs-flipped.jpg");
+  text-align: right;
+  color: #fff;
+}
 
 .hero-content {
   position: relative;
@@ -195,14 +199,20 @@ header .container {
 
 .slide3 .hero-content {
   background: rgba(0,0,0, .7);
-  padding: 50px 100px;
+}
+
+.slide2 .hero-content,
+.slide3 .hero-content,
+.slide4 .hero-content {
+  background: rgba(0,0,0, .5);
+  padding: 25px 0;
   display: inline-block;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff;
 }
 
 .slide3 h1 {
-color: #7C92C4;
+  color: #7C92C4;
 }
 
 .cta {
@@ -266,8 +276,31 @@ footer li a {
 
 //MEDIA QUERIES
 
+//phones
+
+@media(min-width: 414px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 5px;
+  }
+}
+
 //Tablets
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .hero-content {
+    bottom: 0;
+  }
+}
+
 @media(min-width: 768px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 10px 35px;
+  }
+
   .brand-logo img {
     width: 85%;
   }
@@ -348,12 +381,22 @@ footer li a {
 
 @media(min-width: 1024px) and (orientation: portrait) {
   .hero-content {
-    bottom: 125px;
-  }
+     bottom: 125px;
+   }
 
 }
 
 @media(min-width: 1366px) {
+  .slide2 .hero-content,
+  .slide4 .hero-content {
+    padding: 0;
+    background: none;
+  }
+
+  .slide3 .hero-content {
+    padding: 50px 100px;
+  }
+
   header .container {
     display: flex;
     flex-direction: row;
