@@ -15,6 +15,10 @@ $heading-text: 'Bebas Neue', sans-serif;
 
 //Base Styles
 
+* {
+  box-sizing: border-box;
+}
+
 .top-nav {
   display: none;
 }
@@ -159,27 +163,69 @@ header .container {
 
 
 //Slides
-.slide1 {
-  background-image: url("../images/group-of-3.jpg");
+.slide {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-
 }
+
+.slide1 {
+  background-image: url("../images/group-of-3.jpg");
+}
+
+.slide2 {
+  background-image: url("../images/buff-dude.jpg");
+  text-align: left;
+  color: #fff;
+}
+
+.slide3 {
+  background-image: url("../images/back.jpg");
+  text-align: right;
+}
+
 
 .hero-content {
   position: relative;
   bottom: 75px;
 }
 
+.slide3 .hero-content {
+  background: rgba(0,0,0, .7);
+  padding: 50px 100px;
+  display: inline-block;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.slide3 h1 {
+color: #7C92C4;
+}
+
 .cta {
   margin-top: 35px;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 //Footer
 
