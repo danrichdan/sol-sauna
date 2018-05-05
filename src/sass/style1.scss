@@ -15,6 +15,10 @@ $heading-text: 'Bebas Neue', sans-serif;
 
 //Base Styles
 
+* {
+  box-sizing: border-box;
+}
+
 .top-nav {
   display: none;
 }
@@ -157,13 +161,7 @@ header .container {
   color: $secondary-color;
 }
 
-
-/**********Slides***********/
-
-@keyframes hero-content {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
+//Slides
 
 .slide {
   background-size: cover;
@@ -172,19 +170,56 @@ header .container {
   height: 100vh;
   display: flex;
   align-items: center;
-  transition: background 2s;
+
 }
 
 //Slide1
 .slide1 {
   background-image: url("../images/group-of-3.jpg");
-  justify-content: center;
+
+}
+
+.slide1 {
+  background-image: url("../images/group-of-3.jpg");
+}
+
+.slide2 {
+  background-image: url("../images/buff-dude.jpg");
+  text-align: left;
+  color: #fff;
+}
+
+.slide3 {
+  background-image: url("../images/back.jpg");
+}
+
+.slide4 {
+  background-image: url("../images/woman-abs-flipped.jpg");
+  text-align: right;
+  color: #fff;
 }
 
 .hero-content {
   position: relative;
   bottom: 75px;
-  //animation: hero-content 2s;
+}
+
+.slide3 .hero-content {
+  background: rgba(0,0,0, .7);
+}
+
+.slide2 .hero-content,
+.slide3 .hero-content,
+.slide4 .hero-content {
+  background: rgba(0,0,0, .5);
+  padding: 25px 0;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.slide3 h1 {
+  color: #7C92C4;
 }
 
 .cta {
@@ -194,19 +229,32 @@ header .container {
 //Slide2
 .slide2 {
   background-image: url("../images/buff-dude.jpg");
-  justify-content: flex-start;
   text-align: left;
-  color: #fff;
 }
-
-
 
 //Slide3
 .slide3 {
   background-image: url("../images/back.jpg");
-  background-position: right top;
-  justify-content: flex-end;
   text-align: right;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
@@ -249,8 +297,31 @@ footer li a {
 
 //MEDIA QUERIES
 
+//phones
+
+@media(min-width: 414px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 5px;
+  }
+}
+
 //Tablets
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .hero-content {
+    bottom: 0;
+  }
+}
+
 @media(min-width: 768px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 10px 35px;
+  }
+
   .brand-logo img {
     width: 85%;
   }
@@ -312,8 +383,6 @@ footer li a {
   }
 
   .top-nav ul a {
-    //font-size: 1.25em;
-    //padding: 10px 20px;
     padding: 10px 10px;
     display: inline-block;
     &:hover,
@@ -331,12 +400,22 @@ footer li a {
 
 @media(min-width: 1024px) and (orientation: portrait) {
   .hero-content {
-    bottom: 125px;
-  }
+     bottom: 125px;
+   }
 
 }
 
 @media(min-width: 1366px) {
+  .slide2 .hero-content,
+  .slide4 .hero-content {
+    padding: 0;
+    background: none;
+  }
+
+  .slide3 .hero-content {
+    padding: 50px 100px;
+  }
+
   header .container {
     display: flex;
     flex-direction: row;
@@ -385,7 +464,6 @@ footer li a {
 }
 
 @media (min-width: 1600px) {
-
   .brand-logo img {
     width: 90%;
   }
