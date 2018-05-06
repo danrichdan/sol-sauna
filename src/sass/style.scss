@@ -1,157 +1,20 @@
-//Variables
-$primary-color: rgba(103,197,193, .2);
-$secondary-color: rgb(103,197,193);
-
-$body-text: 'Montserrat';
-$hero-text: 'Euphoria Script';
-$heading-text: 'Bebas Neue';
-
-
-//Base Styles
-.brand-logo img {
-  max-width: 100%;
-  width: 17%;
-}
-
-.container {
-  max-width: 1200px;
-  width: 95%;
-  margin: 0 auto;
-}
-
-body {
-  font-family: $body-text;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-header {
-  padding: 25px 0;
-}
-
-header,
-footer {
-  background: $primary-color;
-}
-
-.main-nav {
-  background: $secondary-color;
-}
-
-.main-nav a {
-  font-family: $heading-text;
-  color: #000;
-}
-
-// Home Page
-
-#hero {
-  text-align: center;
-}
-
-#hero h1 {
-  font-family: $hero-text;
-  margin: 0;
-  font-size: 8.25rem;
-}
-
-#hero span {
-  color: $secondary-color;
-}
-
-//Buttons
-
-.btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: #E3E8E7;
-}
-
-.btn-primary {
-  background-color: #3156A6;
-}
-
-.btn-success {
-  background-color: $secondary-color;
-  color: #000;
-}
-
-.btn:hover {
-  background-color: transparent;
-}
-
-.btn-primary:hover {
-  color: #3156A6;
-  border: 1px solid #3156A6;
-}
-
-.btn-success:hover {
-  color: $secondary-color;;
-  border: 1px solid $secondary-color;
-}
-
-.slide1 {
-  background-image: url("../images/group-of-3.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 100vh;
-
-}
-
-ul {
-  margin: 0;
-}
-
-.slide1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-.main-nav ul li {
-  padding: 10px 10px;
-  margin: 0 25px;
-  font-size: 1.75em;
-}
-
-.hero-content {
-  position: relative;
-  bottom: 25px;
-}
+@import 'normalize';
+@import 'typography';
+@import 'variables';
+@import 'base';
+@import 'side-nav';
+@import 'header';
+@import 'navigation';
+@import 'home';
+@import 'buttons';
+@import 'slides';
+@import 'animations';
+@import 'footer';
+@import 'media-queries';
 
 
 
-header .container {
-  text-align: center;
-  position: relative;
 
-}
-
-.header-contact p {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0;
-}
-
-.header-contact {
-  text-align: right;
-  position: absolute;
-  top: 25%;
-  right: 5%;
-  transform: translate(25%, 25%);
-}
 
 
 

@@ -1,0 +1,59 @@
+//Slides
+
+.slide {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.slide1 {
+  background-image: url("../images/group-of-3.jpg");
+}
+
+.slide2 {
+  background-image: url("../images/buff-dude.jpg");
+  text-align: left;
+  color: #fff;
+}
+
+.slide3 {
+  background-image: url("../images/back.jpg");
+  justify-content: center;
+  text-align: center;
+}
+
+.slide4 {
+  background-image: url("../images/woman-abs-flipped.jpg");
+  text-align: right;
+  color: #fff;
+}
+
+.hero-content {
+  position: relative;
+  bottom: 75px;
+}
+
+.slide3 .hero-content {
+  background: rgba(0,0,0, .7);
+}
+
+.slide2 .hero-content,
+.slide3 .hero-content,
+.slide4 .hero-content {
+  background: rgba(0,0,0, .5);
+  padding: 25px 0;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.slide3 h1 {
+  color: #7C92C4;
+}
+
+.cta {
+  margin-top: 35px;
+}

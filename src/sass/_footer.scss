@@ -1,0 +1,35 @@
+//Footer
+
+footer {
+  padding: 25px 0;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-social span {
+  display: inline-block;
+}
+
+footer li,
+.copyright-social span {
+  padding: 5px 3px;
+}
+
+.copyright-social span,
+footer li a {
+  color: $footer-text-color;
+  font-size: .75em;
+}
+
+.copyright-social img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.social {
+  text-align: right;
+
+}
