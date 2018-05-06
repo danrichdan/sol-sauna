@@ -1,25 +1,8 @@
-//Variables for determining screen size
-let screenWidth = getScreenWith();
-var viewWidth;
-let menuWidth = setMenuWidth(screenWidth, viewWidth);
-
 //Variables for mobile menu
+const menuWidth = 50;
 const hamburgerMenu = document.getElementById('hamburger');
 const closeBtn = document.getElementById('btn-close');
 const sideNav = document.querySelector('.side-nav');
-
-function getScreenWith() {
-    return screen.width;
-};
-
-function setMenuWidth(screenWidth, viewWidth) {
-    if(screenWidth <= 568) {
-        viewWidth = 70;
-    } else {
-        viewWidth = 50;
-    }
-    return viewWidth;
-};
 
 
 hamburgerMenu.addEventListener('click', function(){
