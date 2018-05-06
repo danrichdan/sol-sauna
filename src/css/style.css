@@ -297,6 +297,18 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.otf"); }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue Regular.otf"); }
+
+@font-face {
+  font-family: 'Euphoria Script';
+  src: url("../fonts/EuphoriaScript.ttf"); }
+
 * {
   box-sizing: border-box; }
 
@@ -306,7 +318,7 @@ template {
   margin: 0 auto; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", Tahoma, Helvetica, sans-serif; }
 
 a {
   text-decoration: none; }
@@ -365,14 +377,14 @@ header .container {
   background: #67c5c1; }
 
 .main-nav a {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue", Calibri, "Futura Condensed Medium", sans-serif;
   color: #000; }
 
 #hero {
   text-align: center; }
 
 #hero h1 {
-  font-family: "Euphoria Script", cursive;
+  font-family: "Euphoria Script", "Lucida Handwriting", "Brush Script MT", cursive;
   margin: 0;
   font-size: 4.25rem; }
 
