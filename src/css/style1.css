@@ -106,32 +106,13 @@ header .container {
 #hero span {
   color: #67c5c1; }
 
-<<<<<<< HEAD
-/**********Slides***********/
-@keyframes hero-content {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-=======
->>>>>>> slideshowRedo
 .slide {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-<<<<<<< HEAD
-  align-items: center;
-  transition: background 2s; }
-
-.slide1 {
-  background-image: url("../images/group-of-3.jpg");
-  justify-content: center; }
-=======
   align-items: center; }
->>>>>>> slideshowRedo
 
 .slide1 {
   background-image: url("../images/group-of-3.jpg"); }
@@ -142,7 +123,9 @@ header .container {
   color: #fff; }
 
 .slide3 {
-  background-image: url("../images/back.jpg"); }
+  background-image: url("../images/back.jpg");
+  justify-content: center;
+  text-align: center; }
 
 .slide4 {
   background-image: url("../images/woman-abs-flipped.jpg");
@@ -171,19 +154,6 @@ header .container {
 .cta {
   margin-top: 35px; }
 
-<<<<<<< HEAD
-.slide2 {
-  background-image: url("../images/buff-dude.jpg");
-  justify-content: flex-start;
-  text-align: left;
-  color: #fff; }
-
-.slide3 {
-  background-image: url("../images/back.jpg");
-  background-position: right top;
-  justify-content: flex-end;
-  text-align: right; }
-=======
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -202,7 +172,6 @@ header .container {
     opacity: .4; }
   to {
     opacity: 1; } }
->>>>>>> slideshowRedo
 
 footer {
   padding: 25px 0; }
