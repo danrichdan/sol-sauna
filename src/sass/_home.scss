@@ -1,0 +1,19 @@
+// Home Page
+
+#hero {
+  text-align: center;
+}
+
+#hero h1 {
+  font-family: $hero-text;
+  margin: 0;
+  font-size: 4.25rem;
+}
+
+#hero h2 {
+  font-size: 1.1rem;
+}
+
+#hero span {
+  color: $secondary-color;
+}

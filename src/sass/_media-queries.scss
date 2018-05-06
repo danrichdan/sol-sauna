@@ -1,0 +1,185 @@
+//MEDIA QUERIES
+
+//phones
+
+@media(min-width: 414px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 5px;
+  }
+}
+
+//Tablets
+
+@media (min-width: 568px) and (orientation: landscape) {
+  .hero-content {
+    bottom: 0;
+  }
+}
+
+@media(min-width: 768px) {
+  .slide2 .hero-content,
+  .slide3 .hero-content,
+  .slide4 .hero-content {
+    padding: 25px 10px 35px;
+  }
+
+  .brand-logo img {
+    width: 85%;
+  }
+
+  .side-nav {
+    font-size: 1.75rem;
+  }
+
+  #hero h1 {
+    font-size: 7.75rem;
+  }
+
+  #hero h2 {
+    font-size: 1.75rem;
+  }
+
+  %btn {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  .copyright-social span,
+  footer li a {
+    font-size: 1.125em;
+  }
+
+  footer ul {
+    display: flex;
+  }
+
+  footer li {
+    padding-left: 10px;
+  }
+
+  .copyright-social img {
+    width: 22px;
+  }
+}
+
+//Laptops
+
+@media(min-width: 1024px) {
+  #hamburger, .side-nav {
+    display: none;
+  }
+
+  .top-nav {
+    display: block;
+  }
+
+  .top-nav .container ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-nav .container ul li {
+    margin: 0 25px;
+    font-size: 1.25em;
+  }
+
+  .top-nav ul a {
+    padding: 10px 10px;
+    display: inline-block;
+    &:hover,
+    &:active {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+
+  .header-contact {
+    display: inline-block;
+    text-align: right;
+    font-size: .9rem;
+  }
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+  .hero-content {
+    bottom: 125px;
+  }
+
+}
+
+@media(min-width: 1366px) {
+  .slide2 .hero-content,
+  .slide4 .hero-content {
+    padding: 0;
+    background: none;
+  }
+
+  .slide3 .hero-content {
+    padding: 50px 100px;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+  .header-contact {
+    position: absolute;
+    right: 0;
+  }
+
+  .copyright-social span,
+  footer li a {
+    font-size: .95em;
+  }
+
+  header {
+    padding: 5px 0;
+  }
+
+  .top-nav ul a {
+    padding: 5px 10px;
+  }
+
+  #hero h1 {
+    font-size: 6.75rem;
+  }
+
+  #hero h2 {
+    font-size: 1.5rem;
+  }
+
+  %btn {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+  }
+
+  .hero-content {
+    bottom: 75px;
+  }
+
+  .slide1 {
+    background-position: center 35%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .brand-logo img {
+    width: 90%;
+  }
+
+  header {
+    padding: 30px 0 20px;
+  }
+
+  .top-nav .container ul li {
+    font-size: 1.55em;
+  }
+
+  .hero-content {
+    bottom: 85px;
+  }
+}

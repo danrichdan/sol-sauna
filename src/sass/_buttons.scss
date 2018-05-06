@@ -1,0 +1,33 @@
+//Buttons
+
+%btn {
+  padding: 10px;
+  border-radius: 5px;
+  color: $light-text-color;
+  font-size: .75rem;
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $primary-btn-color;
+}
+
+.btn-success {
+  @extend %btn;
+  background-color: $secondary-color;
+  color: $dark-text-color;
+}
+
+.btn-primary:hover {
+  color: $primary-btn-color;
+  border: 1px solid $primary-btn-color;
+}
+
+.btn-success:hover {
+  color: $secondary-color;;
+  border: 1px solid $secondary-color;
+}
