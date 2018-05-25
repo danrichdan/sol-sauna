@@ -330,6 +330,9 @@ ul {
   margin: 0;
   padding: 0; }
 
+p {
+  line-height: 1.5; }
+
 .top-nav {
   display: none; }
 
@@ -509,6 +512,75 @@ footer li a {
 
 .social {
   text-align: right; }
+
+.box-section {
+  display: flex;
+  justify-content: space-around;
+  font-size: .9em; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 2; }
+
+.box:nth-last-of-type(2) {
+  margin: 0 25px; }
+
+#infrared-saunas {
+  text-align: center; }
+
+#infrared-saunas .section {
+  padding: 50px 0; }
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  color: #000; }
+
+.pimg1 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/infrared-sauna.jpg);
+  min-height: 50vh; }
+
+.pimg2 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/red-infrared-sauna.jpg);
+  min-height: 25vh; }
+
+.pimg3 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/traditional-sauna.jpg);
+  min-height: 25vh; }
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center; }
+
+.section-dark {
+  background-color: #67c5c1; }
+
+.section-light {
+  background-color: rgba(103, 197, 193, 0.2); }
+
+.section-grey {
+  background-color: grey; }
+
+h2 {
+  margin-bottom: 0;
+  margin-top: 0; }
 
 @media (min-width: 414px) {
   .slide2 .hero-content,
