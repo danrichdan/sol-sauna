@@ -1,0 +1,44 @@
+.himg1 {
+
+  background: linear-gradient($gradient-color-1, transparent 90%),
+  linear-gradient(0deg, $gradient-color-2, transparent 60%),
+  url(../images/couple-salt-room.jpg);
+  min-height: 50vh;
+}
+
+.himg2 {
+  background: linear-gradient($gradient-color-1, transparent 90%),
+  linear-gradient(0deg, $gradient-color-2, transparent 60%),
+  url(../images/twins-salt-room.jpg);
+  min-height: 25vh;
+}
+
+.himg3 {
+  background: linear-gradient($gradient-color-1, transparent 90%),
+  linear-gradient(0deg, $gradient-color-2, transparent 60%),
+  url(../images/sal-flowers.jpg);
+  min-height: 25vh;
+}
+
+.himg4 {
+  background: linear-gradient($gradient-color-1, transparent 90%),
+  linear-gradient(0deg, $gradient-color-2, transparent 60%),
+  url(../images/family-salt-room.jpg);
+  min-height: 25vh;
+}
+
+.himg1,
+.himg2,
+.himg3,
+.himg4 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+#halotherapy ul li {
+  margin-top: 10px;
+}

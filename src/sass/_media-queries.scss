@@ -62,6 +62,26 @@
   .copyright-social img {
     width: 22px;
   }
+
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .himg1,
+  .himg2,
+  .himg3,
+  .himg4 {
+    background-attachment: fixed;
+  }
+
+  .box-section {
+    flex-direction: row;
+  }
+
+  #halotherapy ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 //Laptops
@@ -105,7 +125,6 @@
   .hero-content {
     bottom: 125px;
   }
-
 }
 
 @media(min-width: 1366px) {
