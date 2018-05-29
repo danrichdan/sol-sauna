@@ -2,6 +2,7 @@
 
 .box-section{
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   font-size: .9em;
 }
@@ -17,11 +18,13 @@
   margin: 0 25px;
 }
 
-#infrared-saunas {
+#infrared-saunas,
+#halotherapy {
   text-align: center;
 }
 
-#infrared-saunas .section {
+#infrared-saunas .section,
+#halotherapy .section {
   padding: 50px 0;
 }
 
@@ -41,22 +44,22 @@
 
 .pimg1 {
 
-  background: linear-gradient(#6699ff, transparent 90%), /*rgb(111,151,187)*/
-                    linear-gradient(0deg, #fff, transparent 60%),
+  background: linear-gradient($gradient-color-1, transparent 90%),
+                    linear-gradient(0deg, $gradient-color-2, transparent 60%),
                     url(../images/infrared-sauna.jpg);
                     min-height: 50vh;
 }
 
 .pimg2 {
-  background: linear-gradient(#6699ff, transparent 90%), /*rgb(111,151,187)*/
-              linear-gradient(0deg, #fff, transparent 60%),
+  background: linear-gradient($gradient-color-1, transparent 90%),
+              linear-gradient(0deg, $gradient-color-2, transparent 60%),
               url(../images/red-infrared-sauna.jpg);
               min-height: 25vh;
 }
 
 .pimg3 {
-  background: linear-gradient(#6699ff, transparent 90%), /*rgb(111,151,187)*/
-              linear-gradient(0deg, #fff, transparent 60%),
+  background: linear-gradient($gradient-color-1, transparent 90%),
+              linear-gradient(0deg, $gradient-color-2, transparent 60%),
               url(../images/traditional-sauna.jpg);
               min-height: 25vh;
 }
@@ -65,11 +68,9 @@
 .pimg2,
 .pimg3 {
   position: relative;
-  //opacity: 0.70;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
 }
@@ -85,13 +86,6 @@
 .section-grey {
   background-color: grey;
 }
-
-//.ptext {
-//  background-color: rgba(0,0,0,0.3);
-//  color: #fff;
-//  width: 30%;
-//  border-radius: 5px;
-//}
 
 h2 {
   margin-bottom: 0;

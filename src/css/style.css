@@ -515,6 +515,7 @@ footer li a {
 
 .box-section {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   font-size: .9em; }
 
@@ -527,10 +528,12 @@ footer li a {
 .box:nth-last-of-type(2) {
   margin: 0 25px; }
 
-#infrared-saunas {
+#infrared-saunas,
+#halotherapy {
   text-align: center; }
 
-#infrared-saunas .section {
+#infrared-saunas .section,
+#halotherapy .section {
   padding: 50px 0; }
 
 .pimg1,
@@ -565,7 +568,6 @@ footer li a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   align-items: center; }
 
@@ -581,6 +583,36 @@ footer li a {
 h2 {
   margin-bottom: 0;
   margin-top: 0; }
+
+.himg1 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/couple-salt-room.jpg);
+  min-height: 50vh; }
+
+.himg2 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/twins-salt-room.jpg);
+  min-height: 25vh; }
+
+.himg3 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/sal-flowers.jpg);
+  min-height: 25vh; }
+
+.himg4 {
+  background: linear-gradient(#6699ff, transparent 90%), linear-gradient(0deg, #fff, transparent 60%), url(../images/family-salt-room.jpg);
+  min-height: 25vh; }
+
+.himg1,
+.himg2,
+.himg3,
+.himg4 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+
+#halotherapy ul li {
+  margin-top: 10px; }
 
 @media (min-width: 414px) {
   .slide2 .hero-content,
@@ -616,7 +648,21 @@ h2 {
   footer li {
     padding-left: 10px; }
   .copyright-social img {
-    width: 22px; } }
+    width: 22px; }
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .himg1,
+  .himg2,
+  .himg3,
+  .himg4 {
+    background-attachment: fixed; }
+  .box-section {
+    flex-direction: row; }
+  #halotherapy ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 
 @media (min-width: 1024px) {
   #hamburger, .side-nav {
