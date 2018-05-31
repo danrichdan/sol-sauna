@@ -513,6 +513,9 @@ footer li a {
 .social {
   text-align: right; }
 
+.social a:hover {
+  cursor: pointer; }
+
 .box-section {
   display: flex;
   flex-direction: column;
@@ -614,6 +617,74 @@ h2 {
 #halotherapy ul li {
   margin-top: 10px; }
 
+#contact {
+  background: linear-gradient(#fff, transparent 60%), linear-gradient(0deg, #fff, transparent 60%), url(../images/sweat.jpg) center no-repeat;
+  background-size: cover;
+  padding: 1em 0; }
+
+.brand {
+  text-align: center; }
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(103, 197, 193, 0.1); }
+
+.wrapper > * {
+  padding: 1em; }
+
+.company-info {
+  background: #67c5c1; }
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0; }
+
+.company-contact {
+  background: #fff; }
+
+/*
+  FORM STYLES
+*/
+.company-contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
+
+.company-contact form label {
+  display: block; }
+
+.company-contact form p {
+  margin: 0; }
+
+.company-contact form .full {
+  grid-column: 1 / 3; }
+
+.company-contact form button,
+.company-contact form input,
+.company-contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #67c5c1; }
+
+.company-contact form button {
+  background: #67c5c1;
+  border: 0;
+  text-transform: uppercase; }
+
+.company-contact form button:hover,
+.company-contact form button:focus {
+  background: #c9e6ff;
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+  cursor: pointer; }
+
+#about {
+  padding: 40px 0; }
+
+#contact {
+  padding-bottom: 40px; }
+
 @media (min-width: 414px) {
   .slide2 .hero-content,
   .slide3 .hero-content,
@@ -662,7 +733,15 @@ h2 {
   #halotherapy ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+  .wrapper > * {
+    padding: 2em; }
+  .company-info h3,
+  .company-info ul {
+    text-align: left; } }
 
 @media (min-width: 1024px) {
   #hamburger, .side-nav {
