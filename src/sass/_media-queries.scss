@@ -97,6 +97,14 @@
   .company-info ul {
     text-align: left;
   }
+
+  .non-member-pricing-tables {
+    flex-direction: row;
+  }
+
+  .non-member-pricing-tables div ul:last-of-type {
+    margin-top: 0;
+  }
 }
 
 //Laptops
@@ -129,10 +137,23 @@
     }
   }
 
+  .active {
+    background-color: darken($secondary-color, 10%);
+  }
+
   .header-contact {
     display: inline-block;
     text-align: right;
     font-size: .9rem;
+  }
+
+  .col {
+    width: 33.3%;
+  }
+
+  .non-member-pricing h3,
+  #pricing-tables h3 {
+    margin-bottom: 50px;
   }
 }
 
