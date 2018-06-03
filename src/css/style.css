@@ -617,6 +617,59 @@ h2 {
 #halotherapy ul li {
   margin-top: 10px; }
 
+#infrared-benefits h2 {
+  margin: 40px 0 25px; }
+
+.benefits-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 2 25%;
+  height: 100%; }
+
+.card {
+  box-shadow: 2px 2px 2px #ccc;
+  border: 1px solid #ccc;
+  margin: 10px 0; }
+
+.card-header {
+  background-color: #ccc;
+  color: #000;
+  text-align: center;
+  font-weight: normal; }
+
+.card-header h4 {
+  padding: 0;
+  margin: 0; }
+
+.card-content {
+  color: #222; }
+
+.card-footer {
+  color: #3156A6;
+  cursor: pointer; }
+
+.card-header,
+.card-footer,
+.card-content {
+  padding: 10px; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.other-benefits {
+  margin-top: 50px; }
+
+.other-benefits li {
+  padding: 5px 0; }
+
+.other-benefits p {
+  margin: 25px 0 50px;
+  font-size: .9em; }
+
 #contact {
   background: linear-gradient(#fff, transparent 60%), linear-gradient(0deg, #fff, transparent 60%), url(../images/sweat.jpg) center no-repeat;
   background-size: cover;
@@ -685,6 +738,87 @@ h2 {
 #contact {
   padding-bottom: 40px; }
 
+#pricing-general h2,
+#pricing-general h3,
+#pricing-tables h3 {
+  text-align: center; }
+
+.non-member-pricing {
+  padding-top: 30px; }
+
+.non-member-pricing h3,
+#pricing-tables h3 {
+  margin-bottom: 15px; }
+
+.non-member-pricing-tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.non-member-pricing-tables div ul {
+  border: 1px solid #ccc; }
+
+.non-member-pricing-tables div ul:last-of-type {
+  margin-top: 20px; }
+
+.non-member-pricing-tables div ul li:first-child {
+  background-color: #67c5c1;
+  text-align: center;
+  padding: 1px; }
+
+.non-member-pricing-tables div ul li {
+  padding: 10px 5px; }
+
+.non-member-pricing-tables div ul li:nth-of-type(3) {
+  background-color: rgba(103, 197, 193, 0.2); }
+
+/************
+Pricing Tables
+ */
+.col {
+  float: left;
+  width: 100%;
+  padding: 8px; }
+
+.price-box {
+  background: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+  transition: 0.3s; }
+
+.price-box:hover,
+.price-box.best {
+  box-shadow: 0 5px 10px 0 #ccc; }
+
+.price-box .header {
+  background-color: #67c5c1;
+  color: #000;
+  font-size: 25px; }
+
+.price-box .header-green {
+  background-color: #3156A6;
+  color: #fff; }
+
+.price-box li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center; }
+
+.price-box .emph {
+  background-color: #f4f4f4;
+  font-size: 20px; }
+
+/******
+Pricing Miscellaneous
+ */
+#pricing-misc {
+  clear: both; }
+
+#pricing-general,
+#pricing-misc,
+#pricing-tables {
+  padding: 50px 0; }
+
 @media (min-width: 414px) {
   .slide2 .hero-content,
   .slide3 .hero-content,
@@ -741,7 +875,11 @@ h2 {
     padding: 2em; }
   .company-info h3,
   .company-info ul {
-    text-align: left; } }
+    text-align: left; }
+  .non-member-pricing-tables {
+    flex-direction: row; }
+  .non-member-pricing-tables div ul:last-of-type {
+    margin-top: 0; } }
 
 @media (min-width: 1024px) {
   #hamburger, .side-nav {
@@ -759,10 +897,17 @@ h2 {
     display: inline-block; }
     .top-nav ul a:hover, .top-nav ul a:active {
       background-color: #45b4af; }
+  .active {
+    background-color: #45b4af; }
   .header-contact {
     display: inline-block;
     text-align: right;
-    font-size: .9rem; } }
+    font-size: .9rem; }
+  .col {
+    width: 33.3%; }
+  .non-member-pricing h3,
+  #pricing-tables h3 {
+    margin-bottom: 50px; } }
 
 @media (min-width: 1024px) and (orientation: portrait) {
   .hero-content {
