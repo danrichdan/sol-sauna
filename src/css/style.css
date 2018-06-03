@@ -617,6 +617,59 @@ h2 {
 #halotherapy ul li {
   margin-top: 10px; }
 
+#infrared-benefits h2 {
+  margin: 40px 0 25px; }
+
+.benefits-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 2 25%;
+  height: 100%; }
+
+.card {
+  box-shadow: 2px 2px 2px #ccc;
+  border: 1px solid #ccc;
+  margin: 10px 0; }
+
+.card-header {
+  background-color: #ccc;
+  color: #000;
+  text-align: center;
+  font-weight: normal; }
+
+.card-header h4 {
+  padding: 0;
+  margin: 0; }
+
+.card-content {
+  color: #222; }
+
+.card-footer {
+  color: #3156A6;
+  cursor: pointer; }
+
+.card-header,
+.card-footer,
+.card-content {
+  padding: 10px; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.other-benefits {
+  margin-top: 50px; }
+
+.other-benefits li {
+  padding: 5px 0; }
+
+.other-benefits p {
+  margin: 25px 0 50px;
+  font-size: .9em; }
+
 #contact {
   background: linear-gradient(#fff, transparent 60%), linear-gradient(0deg, #fff, transparent 60%), url(../images/sweat.jpg) center no-repeat;
   background-size: cover;
