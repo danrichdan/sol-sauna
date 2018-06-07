@@ -4,7 +4,45 @@
   background: $secondary-color;
 }
 
-.main-nav a {
+.main-nav a,
+.dropdown-header {
   font-family: $heading-text;
   color: $dark-text-color;
+}
+
+.side-nav-dropdown {
+  margin-left: 10px;
+}
+
+.dropdown-header {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  background-color: $secondary-color;
+  font-size: .75rem;
+  width: 125px;
+  display: none;
+}
+
+.dropdown-menu li {
+  padding: 8px 2px;
+  margin: 0;
+  border-top: 1px dotted #000;
+}
+
+.dropdown-menu li {
+  cursor: pointer;
+}
+
+.dropdown-menu li a {
+  width: 100%;
+}
+
+.dropdown-header:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
 }

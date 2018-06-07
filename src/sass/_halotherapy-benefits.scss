@@ -1,0 +1,27 @@
+
+#halotherapy-benefits {
+  padding-top: 50px;
+  background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)),
+  url("../images/sweat.jpg") rgba(250, 250, 250, 0.8);
+  background-size: cover;
+}
+
+#halotherapy-benefits .card-section {
+  padding: 50px 0;
+}
+
+#halotherapy-benefits .card-content {
+  text-align: center;
+  padding: 25px 0;
+}
+
+#halotherapy-benefits .card-content ul li {
+  padding: 3px 0;
+}
+
+hr {
+  margin: 20px auto;
+  width: 50%;
+  opacity: .5;
+}
+

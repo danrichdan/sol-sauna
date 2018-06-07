@@ -118,7 +118,7 @@
     display: block;
   }
 
-  .top-nav .container ul {
+  .top-nav .container ul.main-nav-list {
     display: flex;
     justify-content: center;
   }
@@ -128,6 +128,10 @@
     font-size: 1.25em;
   }
 
+  .top-nav .container .dropdown-menu li {
+    margin: 0;
+  }
+
   .top-nav ul a {
     padding: 10px 10px;
     display: inline-block;
@@ -135,6 +139,11 @@
     &:active {
       background-color: darken($secondary-color, 10%);
     }
+  }
+
+  .top-nav ul .dropdown-header {
+    padding: 10px 10px;
+    display: inline-block;
   }
 
   .active {
@@ -195,7 +204,8 @@
     padding: 5px 0;
   }
 
-  .top-nav ul a {
+  .top-nav ul a,
+  .top-nav ul .dropdown-header {
     padding: 5px 10px;
   }
 

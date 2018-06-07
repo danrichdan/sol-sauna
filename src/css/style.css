@@ -379,9 +379,40 @@ header .container {
 .main-nav {
   background: #67c5c1; }
 
-.main-nav a {
+.main-nav a,
+.dropdown-header {
   font-family: "Bebas Neue", Calibri, "Futura Condensed Medium", sans-serif;
   color: #000; }
+
+.side-nav-dropdown {
+  margin-left: 10px; }
+
+.dropdown-header {
+  position: relative; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  background-color: #67c5c1;
+  font-size: .75rem;
+  width: 125px;
+  display: none; }
+
+.dropdown-menu li {
+  padding: 8px 2px;
+  margin: 0;
+  border-top: 1px dotted #000; }
+
+.dropdown-menu li {
+  cursor: pointer; }
+
+.dropdown-menu li a {
+  width: 100%; }
+
+.dropdown-header:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column; }
 
 #hero {
   text-align: center; }
@@ -617,8 +648,13 @@ h2 {
 #halotherapy ul li {
   margin-top: 10px; }
 
+#infrared-benefits {
+  background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url("../images/sweat.jpg") rgba(250, 250, 250, 0.8);
+  background-size: cover;
+  padding: 50px 0; }
+
 #infrared-benefits h2 {
-  margin: 40px 0 25px; }
+  margin-bottom: 25px; }
 
 .benefits-cards-section {
   display: flex;
@@ -643,22 +679,18 @@ h2 {
   margin: 0; }
 
 .card-content {
-  color: #222; }
+  color: #222;
+  background-color: #fff; }
 
 .card-footer {
   color: #3156A6;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fff; }
 
 .card-header,
 .card-footer,
 .card-content {
   padding: 10px; }
-
-.hide {
-  display: none; }
-
-.show {
-  display: block; }
 
 .other-benefits {
   margin-top: 50px; }
@@ -667,8 +699,28 @@ h2 {
   padding: 5px 0; }
 
 .other-benefits p {
-  margin: 25px 0 50px;
+  margin: 25px 0 0;
   font-size: .9em; }
+
+#halotherapy-benefits {
+  padding-top: 50px;
+  background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)), url("../images/sweat.jpg") rgba(250, 250, 250, 0.8);
+  background-size: cover; }
+
+#halotherapy-benefits .card-section {
+  padding: 50px 0; }
+
+#halotherapy-benefits .card-content {
+  text-align: center;
+  padding: 25px 0; }
+
+#halotherapy-benefits .card-content ul li {
+  padding: 3px 0; }
+
+hr {
+  margin: 20px auto;
+  width: 50%;
+  opacity: .5; }
 
 #contact {
   background: linear-gradient(#fff, transparent 60%), linear-gradient(0deg, #fff, transparent 60%), url(../images/sweat.jpg) center no-repeat;
@@ -886,17 +938,22 @@ Pricing Miscellaneous
     display: none; }
   .top-nav {
     display: block; }
-  .top-nav .container ul {
+  .top-nav .container ul.main-nav-list {
     display: flex;
     justify-content: center; }
   .top-nav .container ul li {
     margin: 0 25px;
     font-size: 1.25em; }
+  .top-nav .container .dropdown-menu li {
+    margin: 0; }
   .top-nav ul a {
     padding: 10px 10px;
     display: inline-block; }
     .top-nav ul a:hover, .top-nav ul a:active {
       background-color: #45b4af; }
+  .top-nav ul .dropdown-header {
+    padding: 10px 10px;
+    display: inline-block; }
   .active {
     background-color: #45b4af; }
   .header-contact {
@@ -933,7 +990,8 @@ Pricing Miscellaneous
     font-size: .95em; }
   header {
     padding: 5px 0; }
-  .top-nav ul a {
+  .top-nav ul a,
+  .top-nav ul .dropdown-header {
     padding: 5px 10px; }
   #hero h1 {
     font-size: 6.75rem; }

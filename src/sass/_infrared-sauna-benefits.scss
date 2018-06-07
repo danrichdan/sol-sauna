@@ -1,6 +1,12 @@
+#infrared-benefits {
+  background: linear-gradient(rgba(250, 250, 250, 0.8), rgba(250, 250, 250, 0.8)),
+  url("../images/sweat.jpg") rgba(250, 250, 250, 0.8);
+  background-size: cover;
+  padding: 50px 0;
+}
 
 #infrared-benefits h2 {
-  margin: 40px 0 25px;
+  margin-bottom: 25px;
 }
 
 .benefits-cards-section {
@@ -30,12 +36,13 @@
 }
 .card-content {
   color: #222;
-
+  background-color: #fff;
 }
 
 .card-footer {
   color: $primary-btn-color;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .card-header,
@@ -44,13 +51,13 @@
   padding: 10px;
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
+//.hide {
+//  display: none;
+//}
+//
+//.show {
+//  display: block;
+//}
 
 .other-benefits {
   margin-top: 50px;
@@ -61,6 +68,6 @@
 }
 
 .other-benefits p {
-  margin: 25px 0 50px;
+  margin: 25px 0 0;
   font-size: .9em;
 }
